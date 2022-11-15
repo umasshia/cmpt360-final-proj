@@ -1,0 +1,6 @@
+CS-101,Intro. to Computer Science
+CS-360,Java Programming
+CS-238,Data Structures
+CS-258,Databases
+CS-490,Capstone
+CS-456,Software Engineering

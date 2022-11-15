@@ -1,0 +1,93 @@
+There are two text files with the following information stored in them:
+The student.txt file where each line stores the student_id, course_id and grade received.
+The course.txt file where each line stores the course_id and course_name of the course
+
+You need to write a Java program that reads these text files. Your program should have two classes called student and course and a list/array of objects to hold the records from these files. 
+
+Provide the user with the following main menu:
+1. Get student information
+2. Get course information
+3. Insert a new record in the student file
+4. Exit
+
+The above menu should continue to be displayed in a loop until the user selects option 4 when your program should end.
+
+When the user selects option 1 above, the following should be displayed:
+Enter the student ID:
+If the user enters a student id that is not present in the student text file, your program should display "The student ID doesnot appear in the file.", otherwise, display the list of course_id, course_name and the grade received in all the courses that the student has taken. Then go back to the main menu.
+
+When the user selects option 2, the following should be displayed:
+Enter the course ID:
+If the user enters a course ID, that doesnot exist in the course file, dislplay "The ID doesnot appear in the file.", otherwise, display the course name and the number of students who have successfully completed that course (this could be 0 if no students have taken the course). Successfully completing a course requires a grade of A, B, C or D. Then go back to the main menu.
+
+If the user selects option 3 above, display the following for input from the user:
+Enter the student ID:
+Enter the course ID:
+Enter the course grade:
+Once the user enters the above information, write the information in the comma separated student file only if the following conditions are met: 
+1. The same three pieces of information does not already exist in the file (duplicate rows not allowed).
+2. The course ID exists in the course file.
+3. The grade can only be one of these five: A, B, C, D, F
+Otherwise, display appropriate error message and go back to the main menu.
+
+The program should work with any number of rows in the two text files without making any changes to the code. During your final presentation, I may give you text files with different number of rows (same format though).
+
+The code should use good programming practices with proper variable names, proper indentation, spacing and comments where needed. 
+
+The code should be your own. Cheating of any kind will lead to a failing grade in the course and you will be reported to the Dean.
+
+Scoring criteria:
+30 points each for correctly implementing the first three main menu options and the task performed by them.
+10 points for correctly implementing main menu option 4, the loop, and following good programming practices.
+If your project is not complete or doesn't work as intended, partial credits will be awarded based on my perception of how close you are to the complete and correct solution.
+
+Timeline
+Submit a pdf file on Moodle with the complete code and screenshot of output for various scenarios by Monday 11:59 pm on Dec 7th. Also, submit a single java file with the code on Moodle so that I can run it.
+On Thursday, Dec 10th, each one of you will run your code and show it to me on Google Meet. You will go into presentation mode of Google Meet to do that and each of you will get 2-3 mins.
+
+Sample output
+
+Select one of the following:
+1. Get student information
+2. Get course information
+3. Insert a new record in the student file
+4. Exit
+Enter your selection: 1
+
+Enter the student ID: 101
+Courses taken and the grade received
+CS-101 Intro. to Computer Science B
+CS-360 Java Programming F
+CS-490 Capstone D
+CS-238 Data Structures A
+
+Select one of the following:
+1. Get student information
+2. Get course information
+3. Insert a new record in the student file
+4. Exit
+Enter your selection: 2
+
+Enter the course ID: CS-238
+Number of students who have sucessfully completed the course: 2
+
+Select one of the following:
+1. Get student information
+2. Get course information
+3. Insert a new record in the student file
+4. Exit
+Enter your selection: 3
+
+Enter the student ID: 104
+Enter the course ID: CS-490
+Enter the course grade: A
+The record cannot be inserted as it already exists in the student file.
+
+Select one of the following:
+1. Get student information
+2. Get course information
+3. Insert a new record in the student file
+4. Exit
+Enter your selection: 4
+
+Thank you and good bye!
